@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './screens/loginscreen';
 import HomeScreen from './screens/HomeScreen';
+import quiz from './screens/quiz';
+import game from './screens/game'
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +16,8 @@ export default function App() {
     <Stack.Navigator>
       <Stack.Screen options= {{headerShown: false}} name="Login" component={LoginScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Quiz" component={quiz} />
+      <Stack.Screen name="Game" component={game} />
     </Stack.Navigator>
   </NavigationContainer>
   );
